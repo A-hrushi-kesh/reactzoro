@@ -1,0 +1,18 @@
+#card2:hover{
+        transition: all 0.2s;
+        transform: scale(1.1);
+        color: rgba(119, 239, 28, 0.693);
+       
+        
+}
+#card2{
+    color: #ffffff;
+}
+#h{
+    font-size: small;
+    color: #ffffff00;
+}
+#h.card-text:hover{
+    font-size: small;
+    color: #ffffff;
+}

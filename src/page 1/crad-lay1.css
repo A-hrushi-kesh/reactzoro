@@ -1,0 +1,10 @@
+#crad:hover{
+        transition: all 0.3s;
+        transform: scale(1.05);
+        background-color:#BFD641;
+        color: rgba(0, 0, 0, 0.622);
+}
+/* #e2:hover{
+    background-color:#BFD641;
+        color: rgba(0, 0, 0, 0.622);
+} */
