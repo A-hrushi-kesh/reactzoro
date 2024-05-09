@@ -20,15 +20,6 @@ import "./nav.css"
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <Link class="nav-link" aria-current="page" to="/">Home</Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="nav-link" to="/profile">profile</Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="nav-link" to="/watch">Watch</Link>
-                </li>
               </ul>
               <form class="d-flex mt-3" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>

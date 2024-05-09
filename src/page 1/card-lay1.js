@@ -5,7 +5,7 @@ import "./crad-lay1.css";
 function Card(props){
    
     return(
-      <Link to="/profile" style={{textDecoration:"none"}}>
+      <Link to={`/profile/${props.title}/${props.body}/${encodeURIComponent(props.img)}`} style={{textDecoration:"none"}}>
         <div class="card mb-3 bg-dark text-light" id="crad">
         <div class="row g-0 "  id="crad">
           <div class="col-md-4">

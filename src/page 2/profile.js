@@ -1,6 +1,15 @@
+import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import { useParams } from "react-router-dom";
 function Profile(){
+  const {data,dis,img} =useParams();
+  
+  // let [state,setState]=useState({});
+  // useEffect(()=>{
+  //   console.log(data)
+  //     setState(data)
+  // },[])
+
     return(
         <div style={{width:"100%", height:"100%",marginTop:"200px",paddingBottom:"100px"}}>
              <div class="row mt-5">
@@ -8,16 +17,18 @@ function Profile(){
       <div class="card mb-3 bg-dark text-light">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="https://img.flawlessfiles.com/_r/300x400/100/1f/73/1f73284800eb5cf57c32a8f68120cc82/1f73284800eb5cf57c32a8f68120cc82.jpg" class="img-fluid rounded-start p-4" alt="..."/>
+            <img src={img} alt="..."/>
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h2 class="card-title mb-5">Demon Slayer: Kimetsu no Yaiba Hashira Training Arc</h2>
+              <h2 class="card-title mb-5">{data}</h2>
               <div class="btn-group">
-                <Link to="/watch" class="btn btn-success m-2">Watch now</Link>
+                <Link to={`/watch/${data}/${dis}/${encodeURIComponent(img)}`} class="btn btn-success m-2">Watch now</Link>
                 <a href="#" class="btn btn-success m-2">Add to playlist</a>
             </div>
               <p class="card-text mt-5">zoro.Watch is the best site to watch Demon Slayer: Kimetsu no Yaiba Hashira Training Arc SUB online, or you can even watch Demon Slayer: Kimetsu no Yaiba Hashira Training Arc DUB in HD quality. You can also find ufotable anime on AniWatch website..</p>
+              <h5 className="mt-5">Description</h5>
+              <p>{dis}</p>
               <p class="card-text"><small class="">Last updated 3 mins ago</small></p>
             </div>
           </div>

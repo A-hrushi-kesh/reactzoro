@@ -25,8 +25,8 @@ function Assemble(){
         <Nav/>
         <Routes>
           <Route path='/' element={<Home />}/>
-          <Route path="/profile" element={<Profile />}/>
-          <Route path="/watch" element={<Watch />}/>
+          <Route path="/profile/:data/:dis/:img" element={<Profile />}/>
+          <Route path="/watch/:data/:dis/:img" element={<Watch />}/>
           <Route path="/login" element={<Login />}/>
           <Route path="/register" element={<Register />}/>
         </Routes>
