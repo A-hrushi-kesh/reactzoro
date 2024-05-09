@@ -21,10 +21,10 @@ function Home(){
  
 function Assemble(){
     return(
-        <BrowserRouter>
+        <BrowserRouter basename='/zoro'>
         <Nav/>
         <Routes>
-          <Route path='/' element={<Home />}/>
+          <Route path='/zoro' element={<Home />}/>
           <Route path="/profile/:data/:dis/:img" element={<Profile />}/>
           <Route path="/watch/:data/:dis/:img" element={<Watch />}/>
           <Route path="/login" element={<Login />}/>
