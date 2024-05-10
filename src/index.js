@@ -21,10 +21,10 @@ function Home(){
  
 function Assemble(){
     return(
-        <BrowserRouter basename="/reactzoro">
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Nav/>
         <Routes>
-          <Route path="/reactzoro" element={<Home />}/>
+          <Route path="/" element={<Home />}/>
           <Route path="/profile/:data/:dis/:img" element={<Profile />}/>
           <Route path="/watch/:data/:dis/:img" element={<Watch />}/>
           <Route path="/login" element={<Login />}/>
