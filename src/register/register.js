@@ -38,7 +38,7 @@ function Register(){
                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"/>
                   <label class="form-check-label" for="inlineRadio3">others</label>
                 </div><br/><br/>
-                <Link type="submit" class="btn btn-success" to="/zoro">Submit</Link>
+                <Link type="submit" class="btn btn-success" to="/">Submit</Link>
             </form>
         </div>
       </div>

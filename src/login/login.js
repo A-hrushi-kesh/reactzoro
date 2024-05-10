@@ -22,7 +22,7 @@ import { Link } from "react-router-dom";
                 <div class="mb-3">
                     <label class="form-check-label" for="exampleCheck1">Don't have an account? <Link class="text-success" to="/register">Register</Link></label>
                 </div>
-                <Link type="submit" style={{marginRight:"10px"}} class="btn btn-success" to="/zoro">Submit</Link>
+                <Link type="submit" style={{marginRight:"10px"}} class="btn btn-success" to="/">Submit</Link>
                 </form>
         </div>
       </div>
